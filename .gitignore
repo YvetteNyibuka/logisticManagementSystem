@@ -1,0 +1,26 @@
+# Course material: lecture slides, the assignment brief, and any other PDFs
+# (individual reflection reports are submitted separately, not pushed)
+*.pdf
+*.pptx
+
+# Submission archive, built from the files in this repository
+hw2.zip
+
+# Local Claude Code settings
+.claude/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporary file left behind if a save is interrupted
+*.tmp
+
+# Editor and operating system files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
