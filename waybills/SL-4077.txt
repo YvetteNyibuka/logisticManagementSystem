@@ -1,0 +1,33 @@
+============================================================
+SWIFTLINK LOGISTICS - WAYBILL SL-4077
+============================================================
+
+SHIPMENT DETAILS
+  FragileParcel SL-4077 (SwiftLink Logistics)
+    Route: Lake Glassworks -> C. Ingabire, Rubavu
+    Weight: 8 kg at 1,600.00 RWF/kg
+    Insured: 900,000.00 RWF declared at 5.00%
+    Status: out for delivery
+    Handling: glass (packaging fee 5,000.00 RWF)
+  Transport charge: 64,720.00 RWF
+  Current status: out for delivery (Rubavu Depot)
+
+SCAN HISTORY
+  Scan history for SL-4077 (FragileParcel to Rubavu)
+    2026-09-14 10:00  Kigali Depot      received
+    2026-09-14 15:30  Musanze Hub       in transit
+    2026-09-15 08:10  Rubavu Depot      out for delivery
+    Transit time: not available until it is delivered
+
+INVOICE
+  Invoice INV-4077 for SL-4077
+    Billed to Lake Glassworks, issued 2026-09-15
+    Transport charge                         64,720.00
+    Fuel levy (6%)                            3,883.20
+    Remote area surcharge                         0.00
+    Corporate discount (10%)                 -6,472.00
+    --------------------------------------------------
+    Subtotal                                 62,131.20
+    VAT (18%)                                11,183.62
+    Total payable (RWF)                      73,314.82
+============================================================

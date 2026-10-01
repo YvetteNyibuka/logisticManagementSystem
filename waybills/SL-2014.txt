@@ -1,0 +1,31 @@
+============================================================
+SWIFTLINK LOGISTICS - WAYBILL SL-2014
+============================================================
+
+SHIPMENT DETAILS
+  TrackedShipment SL-2014 (SwiftLink Logistics)
+    Route: Gasabo Pharmacy -> Dieudonne Habimana, Musanze
+    Weight: 6 kg at 1,500.00 RWF/kg
+    Insured: 400,000.00 RWF declared at 3.00%
+    Status: in transit
+  Transport charge: 21,000.00 RWF
+  Current status: in transit (Musanze Hub)
+
+SCAN HISTORY
+  Scan history for SL-2014 (TrackedShipment to Musanze)
+    2026-09-14 07:45  Kigali Depot      received
+    2026-09-14 13:20  Musanze Hub       in transit
+    Transit time: not available until it is delivered
+
+INVOICE
+  Invoice INV-2014 for SL-2014
+    Billed to Gasabo Pharmacy, issued 2026-09-15
+    Transport charge                         21,000.00
+    Fuel levy (6%)                            1,260.00
+    Remote area surcharge                         0.00
+    Corporate discount (10%)                 -2,100.00
+    --------------------------------------------------
+    Subtotal                                 20,160.00
+    VAT (18%)                                 3,628.80
+    Total payable (RWF)                      23,788.80
+============================================================

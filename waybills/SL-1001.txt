@@ -1,0 +1,28 @@
+============================================================
+SWIFTLINK LOGISTICS - WAYBILL SL-1001
+============================================================
+
+SHIPMENT DETAILS
+  Shipment SL-1001 (SwiftLink Logistics)
+    Route: Keza Uwase -> A. Niyonsaba, Kigali
+    Weight: 4 kg at 1,500.00 RWF/kg
+  Transport charge: 6,000.00 RWF
+  Current status: received (Kigali Depot)
+
+SCAN HISTORY
+  Scan history for SL-1001 (Shipment to Kigali)
+    2026-09-15 09:10  Kigali Depot      received
+    Transit time: not available until it is delivered
+
+INVOICE
+  Invoice INV-1001 for SL-1001
+    Billed to Keza Uwase, issued 2026-09-15
+    Transport charge                          6,000.00
+    Fuel levy (6%)                              360.00
+    Remote area surcharge                         0.00
+    Corporate discount (10%)                      0.00
+    --------------------------------------------------
+    Subtotal                                  6,360.00
+    VAT (18%)                                 1,144.80
+    Total payable (RWF)                       7,504.80
+============================================================

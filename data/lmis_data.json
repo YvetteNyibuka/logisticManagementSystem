@@ -1,0 +1,254 @@
+{
+    "system": "SwiftLink Logistics MIS",
+    "format_version": 1,
+    "policy": {
+        "remote_districts": [
+            "Kirehe",
+            "Nyagatare",
+            "Nyamasheke",
+            "Rusizi"
+        ],
+        "corporate_accounts": [
+            "Gasabo Pharmacy",
+            "Lake Glassworks",
+            "Muhanga Cement",
+            "Nyagatare Feeds",
+            "Uwera Trading"
+        ]
+    },
+    "shipments": [
+        {
+            "type": "Shipment",
+            "tracking_id": "SL-1001",
+            "sender_name": "Keza Uwase",
+            "recipient_name": "A. Niyonsaba",
+            "destination_city": "Kigali",
+            "weight_kg": 4,
+            "base_rate_per_kg": 1500
+        },
+        {
+            "type": "TrackedShipment",
+            "tracking_id": "SL-2014",
+            "sender_name": "Gasabo Pharmacy",
+            "recipient_name": "Dieudonne Habimana",
+            "destination_city": "Musanze",
+            "weight_kg": 6,
+            "base_rate_per_kg": 1500,
+            "declared_value": 400000,
+            "insurance_rate": 0.03,
+            "current_status": "in transit"
+        },
+        {
+            "type": "ExpressParcel",
+            "tracking_id": "SL-3120",
+            "sender_name": "Uwera Trading",
+            "recipient_name": "J. Mugisha",
+            "destination_city": "Huye",
+            "weight_kg": 2.5,
+            "base_rate_per_kg": 1800,
+            "declared_value": 250000,
+            "insurance_rate": 0.02,
+            "current_status": "delivered",
+            "guaranteed_hours": 12
+        },
+        {
+            "type": "FragileParcel",
+            "tracking_id": "SL-4077",
+            "sender_name": "Lake Glassworks",
+            "recipient_name": "C. Ingabire",
+            "destination_city": "Rubavu",
+            "weight_kg": 8,
+            "base_rate_per_kg": 1600,
+            "declared_value": 900000,
+            "insurance_rate": 0.05,
+            "current_status": "out for delivery",
+            "handling_class": "glass",
+            "packaging_fee": 5000
+        },
+        {
+            "type": "BulkFreight",
+            "tracking_id": "SL-5003",
+            "sender_name": "Nyagatare Feeds",
+            "recipient_name": "Depot 3",
+            "destination_city": "Nyagatare",
+            "weight_kg": 320,
+            "base_rate_per_kg": 900,
+            "pallet_count": 6,
+            "volume_m3": 14
+        },
+        {
+            "type": "BulkFreight",
+            "tracking_id": "SL-5004",
+            "sender_name": "Muhanga Cement",
+            "recipient_name": "Depot 7",
+            "destination_city": "Muhanga",
+            "weight_kg": 500,
+            "base_rate_per_kg": 900,
+            "pallet_count": 4,
+            "volume_m3": 12
+        }
+    ],
+    "scan_events": [
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-5003",
+            "timestamp": "2026-09-14 06:30",
+            "location": "Kigali Depot",
+            "status": "received"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-5004",
+            "timestamp": "2026-09-14 07:00",
+            "location": "Kigali Depot",
+            "status": "received"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-2014",
+            "timestamp": "2026-09-14 07:45",
+            "location": "Kigali Depot",
+            "status": "received"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-3120",
+            "timestamp": "2026-09-14 08:30",
+            "location": "Kigali Depot",
+            "status": "received"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-4077",
+            "timestamp": "2026-09-14 10:00",
+            "location": "Kigali Depot",
+            "status": "received"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-5004",
+            "timestamp": "2026-09-14 10:30",
+            "location": "Muhanga Hub",
+            "status": "out for delivery"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-5003",
+            "timestamp": "2026-09-14 11:45",
+            "location": "Kayonza Hub",
+            "status": "in transit"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-3120",
+            "timestamp": "2026-09-14 12:05",
+            "location": "Muhanga Hub",
+            "status": "in transit"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-5004",
+            "timestamp": "2026-09-14 12:40",
+            "location": "Muhanga",
+            "status": "delivered"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-2014",
+            "timestamp": "2026-09-14 13:20",
+            "location": "Musanze Hub",
+            "status": "in transit"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-4077",
+            "timestamp": "2026-09-14 15:30",
+            "location": "Musanze Hub",
+            "status": "in transit"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-3120",
+            "timestamp": "2026-09-14 16:40",
+            "location": "Huye Depot",
+            "status": "out for delivery"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-3120",
+            "timestamp": "2026-09-14 18:15",
+            "location": "Huye",
+            "status": "delivered"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-4077",
+            "timestamp": "2026-09-15 08:10",
+            "location": "Rubavu Depot",
+            "status": "out for delivery"
+        },
+        {
+            "type": "ScanEvent",
+            "tracking_id": "SL-1001",
+            "timestamp": "2026-09-15 09:10",
+            "location": "Kigali Depot",
+            "status": "received"
+        }
+    ],
+    "invoices": [
+        {
+            "type": "Invoice",
+            "tracking_id": "SL-1001",
+            "customer_name": "Keza Uwase",
+            "issue_date": "2026-09-15",
+            "transport_charge": 6000.0,
+            "is_remote": false,
+            "is_corporate": false
+        },
+        {
+            "type": "Invoice",
+            "tracking_id": "SL-2014",
+            "customer_name": "Gasabo Pharmacy",
+            "issue_date": "2026-09-15",
+            "transport_charge": 21000.0,
+            "is_remote": false,
+            "is_corporate": true
+        },
+        {
+            "type": "Invoice",
+            "tracking_id": "SL-3120",
+            "customer_name": "Uwera Trading",
+            "issue_date": "2026-09-15",
+            "transport_charge": 21500.0,
+            "is_remote": false,
+            "is_corporate": true
+        },
+        {
+            "type": "Invoice",
+            "tracking_id": "SL-4077",
+            "customer_name": "Lake Glassworks",
+            "issue_date": "2026-09-15",
+            "transport_charge": 64720.0,
+            "is_remote": false,
+            "is_corporate": true
+        },
+        {
+            "type": "Invoice",
+            "tracking_id": "SL-5003",
+            "customer_name": "Nyagatare Feeds",
+            "issue_date": "2026-09-15",
+            "transport_charge": 362000.0,
+            "is_remote": true,
+            "is_corporate": true
+        },
+        {
+            "type": "Invoice",
+            "tracking_id": "SL-5004",
+            "customer_name": "Muhanga Cement",
+            "issue_date": "2026-09-15",
+            "transport_charge": 458000.0,
+            "is_remote": false,
+            "is_corporate": true
+        }
+    ]
+}

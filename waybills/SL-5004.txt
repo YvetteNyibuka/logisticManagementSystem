@@ -1,0 +1,31 @@
+============================================================
+SWIFTLINK LOGISTICS - WAYBILL SL-5004
+============================================================
+
+SHIPMENT DETAILS
+  BulkFreight SL-5004 (SwiftLink Logistics)
+    Route: Muhanga Cement -> Depot 7, Muhanga
+    Weight: 500 kg at 900.00 RWF/kg
+    Load: 4 pallets, 12 m3
+  Transport charge: 458,000.00 RWF
+  Current status: delivered (Muhanga)
+
+SCAN HISTORY
+  Scan history for SL-5004 (BulkFreight to Muhanga)
+    2026-09-14 07:00  Kigali Depot      received
+    2026-09-14 10:30  Muhanga Hub       out for delivery
+    2026-09-14 12:40  Muhanga           delivered
+    Transit time: 5.67 hours
+
+INVOICE
+  Invoice INV-5004 for SL-5004
+    Billed to Muhanga Cement, issued 2026-09-15
+    Transport charge                        458,000.00
+    Fuel levy (6%)                           27,480.00
+    Remote area surcharge                         0.00
+    Corporate discount (10%)                -45,800.00
+    --------------------------------------------------
+    Subtotal                                439,680.00
+    VAT (18%)                                79,142.40
+    Total payable (RWF)                     518,822.40
+============================================================

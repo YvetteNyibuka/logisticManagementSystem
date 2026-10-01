@@ -1,0 +1,131 @@
+=== SwiftLink Logistics MIS - demonstration ===
+Registered the sample consignment: 6 shipments, 15 scan events, 0 invoices
+Remote districts: Kirehe, Nyagatare, Nyamasheke, Rusizi
+Corporate accounts: Gasabo Pharmacy, Lake Glassworks, Muhanga Cement, Nyagatare Feeds, Uwera Trading
+
+Consignment register
+--------------------
+Consignment register (6 shipments)
+  ID       Service          Destination  Status              Charge (RWF)
+  SL-1001  Shipment         Kigali       received                6,000.00
+  SL-2014  TrackedShipment  Musanze      in transit             21,000.00
+  SL-3120  ExpressParcel    Huye         delivered              21,500.00
+  SL-4077  FragileParcel    Rubavu       out for delivery       64,720.00
+  SL-5003  BulkFreight      Nyagatare    in transit            362,000.00
+  SL-5004  BulkFreight      Muhanga      delivered             458,000.00
+  -----------------------------------------------------------------------
+  Total transport charges                                      933,220.00
+
+Journey tracking
+----------------
+Scan history for SL-3120 (ExpressParcel to Huye)
+  2026-09-14 08:30  Kigali Depot      received
+  2026-09-14 12:05  Muhanga Hub       in transit
+  2026-09-14 16:40  Huye Depot        out for delivery
+  2026-09-14 18:15  Huye              delivered
+  Transit time: 9.75 hours
+
+Scan history for SL-2014 (TrackedShipment to Musanze)
+  2026-09-14 07:45  Kigali Depot      received
+  2026-09-14 13:20  Musanze Hub       in transit
+  Transit time: not available until it is delivered
+
+Network scans on 2026-09-15 (2 scans)
+  SL-4077  2026-09-15 08:10  Rubavu Depot      out for delivery
+  SL-1001  2026-09-15 09:10  Kigali Depot      received
+
+Scan summary (15 scans across 6 shipments)
+  ID       Scans  Current location    Status            Last scan
+  SL-1001      1  Kigali Depot        received          2026-09-15 09:10
+  SL-2014      2  Musanze Hub         in transit        2026-09-14 13:20
+  SL-3120      4  Huye                delivered         2026-09-14 18:15
+  SL-4077      3  Rubavu Depot        out for delivery  2026-09-15 08:10
+  SL-5003      2  Kayonza Hub         in transit        2026-09-14 11:45
+  SL-5004      3  Muhanga             delivered         2026-09-14 12:40
+
+Guarantee compliance (express parcels)
+  SL-3120  guaranteed 12 h   actual 9.75 h                   MET
+  Totals: 1 met, 0 missed, 0 pending
+
+Invoicing
+---------
+Raised 6 invoices in one operation, dated 2026-09-15.
+
+Invoice INV-3120 for SL-3120
+  Billed to Uwera Trading, issued 2026-09-15
+  Transport charge                         21,500.00
+  Fuel levy (6%)                            1,290.00
+  Remote area surcharge                         0.00
+  Corporate discount (10%)                 -2,150.00
+  --------------------------------------------------
+  Subtotal                                 20,640.00
+  VAT (18%)                                 3,715.20
+  Total payable (RWF)                      24,355.20
+
+Invoice INV-5003 for SL-5003
+  Billed to Nyagatare Feeds, issued 2026-09-15
+  Transport charge                        362,000.00
+  Fuel levy (6%)                           21,720.00
+  Remote area surcharge                     8,000.00
+  Corporate discount (10%)                -36,200.00
+  --------------------------------------------------
+  Subtotal                                355,520.00
+  VAT (18%)                                63,993.60
+  Total payable (RWF)                     419,513.60
+
+Invoice summary (6 invoices, RWF)
+  ID        Transport      Levy   Remote  Discount   Subtotal       VAT      TOTAL
+  SL-1001    6,000.00    360.00     0.00      0.00   6,360.00  1,144.80   7,504.80
+  SL-2014   21,000.00  1,260.00     0.00  2,100.00  20,160.00  3,628.80  23,788.80
+  SL-3120   21,500.00  1,290.00     0.00  2,150.00  20,640.00  3,715.20  24,355.20
+  SL-4077   64,720.00  3,883.20     0.00  6,472.00  62,131.20 11,183.62  73,314.82
+  SL-5003  362,000.00 21,720.00 8,000.00 36,200.00 355,520.00 63,993.60 419,513.60
+  SL-5004  458,000.00 27,480.00     0.00 45,800.00 439,680.00 79,142.40 518,822.40
+  Revenue for the period: 1,067,299.62
+
+Revenue summary, September 2026 (6 invoices)
+  Transport charges                       933,220.00
+  Fuel levy (6%)                           55,993.20
+  Remote area surcharges                    8,000.00
+  Corporate discounts (10%)               -92,722.00
+  --------------------------------------------------
+  Subtotal                                904,491.20
+  VAT (18%)                               162,808.42
+  Total revenue (RWF)                   1,067,299.62
+
+Consignment management
+----------------------
+Updated SL-2014: recipient is now Dieudonne Habimana; its invoice was re-issued at 23,788.80 RWF.
+Rejected: a weight must be above 0 and not more than 1000 kg, got 5000
+  SL-2014 is unchanged: 6 kg to Musanze.
+Registered SL-6001 for Kirehe (remote), scanned and invoiced: revenue 1,079,553.92
+Removed SL-6001 with 1 scan event and invoice INV-6001: revenue back to 1,067,299.62
+
+Persistence
+-----------
+State saved to data/lmis_data.json (6 shipments, 15 scan events, 6 invoices)
+6 waybills written to waybills/: SL-1001.txt, SL-2014.txt, SL-3120.txt, SL-4077.txt, SL-5003.txt, SL-5004.txt
+State reloaded into a new system (6 shipments, 15 scan events, 6 invoices, 0 warnings)
+  Classes rebuilt from the type key: Shipment, TrackedShipment, ExpressParcel, FragileParcel, BulkFreight, BulkFreight
+  Revenue from the reloaded invoices: 1,067,299.62  -> matches
+  Revenue recomputed from the reloaded shipments: 1,067,299.62  -> matches
+  Transit time of SL-3120 after reloading: 9.75 hours
+
+Errors handled
+--------------
+  Rejected: SL-3120 is already registered
+  Rejected: no shipment with tracking id SL-9999
+  Rejected: '14/09/2026' is not a valid timestamp, expected YYYY-MM-DD HH:MM
+  Rejected: a scan status must be received, in transit, out for delivery or delivered, got 'lost'
+  Rejected scan: no shipment with tracking id SL-9999
+  Rejected: SL-3120 was delivered at 2026-09-14 18:15, so its journey is closed and cannot take a later scan
+  Not available: SL-2014 has not been delivered yet (last scan: in transit at Musanze Hub, 2026-09-14 13:20), so it has no transit time
+  Rejected: SL-3120 was already invoiced as INV-3120 on 2026-09-15
+  Rejected: a guarantee must be 6, 12, 24 or 48 hours, got 36
+  Rejected: 'September 2026' is not a valid month, expected YYYY-MM
+  Rejected typed input: '12kg' is not a number such as 2.5
+  Load refused (missing file): no saved data file was found at no_such_file.json
+  Load refused (malformed file): malformed.json is not valid JSON (Expecting property name enclosed in double quotes at line 1, column 38)
+  The system carried on unchanged: 6 shipments, 15 scan events, 6 invoices
+
+Demonstration complete.

@@ -1,0 +1,34 @@
+============================================================
+SWIFTLINK LOGISTICS - WAYBILL SL-3120
+============================================================
+
+SHIPMENT DETAILS
+  ExpressParcel SL-3120 (SwiftLink Logistics)
+    Route: Uwera Trading -> J. Mugisha, Huye
+    Weight: 2.5 kg at 1,800.00 RWF/kg
+    Insured: 250,000.00 RWF declared at 2.00%
+    Status: delivered
+    Guarantee: 12 hours (priority fee 12,000.00 RWF)
+  Transport charge: 21,500.00 RWF
+  Current status: delivered (Huye)
+
+SCAN HISTORY
+  Scan history for SL-3120 (ExpressParcel to Huye)
+    2026-09-14 08:30  Kigali Depot      received
+    2026-09-14 12:05  Muhanga Hub       in transit
+    2026-09-14 16:40  Huye Depot        out for delivery
+    2026-09-14 18:15  Huye              delivered
+    Transit time: 9.75 hours
+
+INVOICE
+  Invoice INV-3120 for SL-3120
+    Billed to Uwera Trading, issued 2026-09-15
+    Transport charge                         21,500.00
+    Fuel levy (6%)                            1,290.00
+    Remote area surcharge                         0.00
+    Corporate discount (10%)                 -2,150.00
+    --------------------------------------------------
+    Subtotal                                 20,640.00
+    VAT (18%)                                 3,715.20
+    Total payable (RWF)                      24,355.20
+============================================================

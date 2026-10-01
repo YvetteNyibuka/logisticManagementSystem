@@ -1,0 +1,30 @@
+============================================================
+SWIFTLINK LOGISTICS - WAYBILL SL-5003
+============================================================
+
+SHIPMENT DETAILS
+  BulkFreight SL-5003 (SwiftLink Logistics)
+    Route: Nyagatare Feeds -> Depot 3, Nyagatare
+    Weight: 320 kg at 900.00 RWF/kg
+    Load: 6 pallets, 14 m3
+  Transport charge: 362,000.00 RWF
+  Current status: in transit (Kayonza Hub)
+
+SCAN HISTORY
+  Scan history for SL-5003 (BulkFreight to Nyagatare)
+    2026-09-14 06:30  Kigali Depot      received
+    2026-09-14 11:45  Kayonza Hub       in transit
+    Transit time: not available until it is delivered
+
+INVOICE
+  Invoice INV-5003 for SL-5003
+    Billed to Nyagatare Feeds, issued 2026-09-15
+    Transport charge                        362,000.00
+    Fuel levy (6%)                           21,720.00
+    Remote area surcharge                     8,000.00
+    Corporate discount (10%)                -36,200.00
+    --------------------------------------------------
+    Subtotal                                355,520.00
+    VAT (18%)                                63,993.60
+    Total payable (RWF)                     419,513.60
+============================================================
